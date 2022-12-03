@@ -23,9 +23,10 @@ app.post("/register", (req, res) => {
   const password = req.body.password;
   const role = req.body.role;
   const department = req.body.department;
+  const cID = 1000;
   const mID = null;
 
-  db.execute(
+  db.query(
     "INSERT INTO EMPLOYEE (empID, fname, lname, email, phone, username, password, role, dept, cID, mID) VALUES (?,?,?,?,?,?,?,?,?,?,?)",
     [
       empID,
