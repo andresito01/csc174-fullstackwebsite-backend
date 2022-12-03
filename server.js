@@ -7,12 +7,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  user: "CSC174045",
-  host: "CSC174045@ecs-pd-proj-db.ecs.csus.edu",
-  password: "Csc134_705026889",
-  database: "CSC174045",
-  // password: "Am246810:01",
-  // database: "CSC174DELIVERABLE3",
+  user: "root",
+  host: "127.0.0.1",
+  password: "Am246810:01",
+  database: "CSC174DELIVERABLE3",
 });
 
 app.post("/register", (req, res) => {
