@@ -1,0 +1,9 @@
+ {
+  "production": {
+    "username": "be459f5c0486e5",
+    "password": "b705de92",
+    "database": "heroku_4f0b5e799dde084",
+    "host": "us-cdbr-east-06.cleardb.net",
+    "dialect": "mysql"
+  }
+}

@@ -2,15 +2,16 @@ const express = require("express");
 const app = express();
 const mysql = require("mysql2");
 const cors = require("cors");
+require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: "Am246810:01",
-  database: "CSC174DELIVERABLE3",
+  user: "be459f5c0486e5",
+  host: "us-cdbr-east-06.cleardb.net",
+  password: "b705de92",
+  database: "heroku_4f0b5e799dde084",
 });
 
 app.post("/register", (req, res) => {
@@ -51,6 +52,6 @@ app.post("/register", (req, res) => {
   );
 });
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Server is running on port 5000");
 });
