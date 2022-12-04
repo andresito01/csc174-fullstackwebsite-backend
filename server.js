@@ -14,7 +14,7 @@ const db = mysql.createConnection({
   database: "heroku_4f0b5e799dde084",
 });
 
-app.post("/register", (req, res) => {
+app.get("/register", (req, res) => {
   const empID = req.body.empID;
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
